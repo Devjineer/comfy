@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products || Da-Hubb</title>
+    <!-- using inline style now and external as well -->
+    <!-- the external style link -->
+    <link rel="stylesheet" href="../paint/home.css" />
+    <style>
+      .master_title {
+        /* color: var(--brown); */
+        filter: drop-shadow(-1px -1px 0 var(--brown-lite))
+          drop-shadow(4px 4px 0 black);
+      }
+      .popmenu {
+        background-color: var(--brown);
+      }
+      .point a {
+        color: var(--brown);
+      }
+    </style>
+    <!-- the home script still applies here -->
+    <script src="../scripts/home.js" defer></script>
+    <!-- the product script -->
+    <script src="../scripts/product.js" defer></script>
+  </head>
+  <body>
+    <!-- the same header goes for all -->
+    <!-- the header -->
+    <header class="master">
+      <!-- pop menu or compass -->
+      <span class="popmenu">
+        <img src="images/menu.svg" id="menupoper" alt="" />
+      </span>
+      <nav class="compass">
+        <!-- close menu or compass -->
+        <ul class="co-ordinates">
+          <img src="../images/icon-close.svg" data-id="closemenu" alt="" />
+          <li class="point"><a href="../index.html" class="link">Home</a></li>
+          <li class="point">
+            <a href="product.html" class="link">Products</a>
+          </li>
+          <li class="point"><a href="./about.html" class="link">About</a></li>
+        </ul>
+      </nav>
+
+      <h2 class="master_title">Products</h2>
+
+      <div class="cart_con">
+        <img src="../images/cart.svg" alt="cart" title="basket" />
+        <span class="num">2</span>
+      </div>
+    </header>
+    <!-- display location -->
+    <div class="location">
+      <h2 class="locate">Home/Products</h2>
+    </div>
+    <!-- section to display products -->
+    <section data-id="display_products" class="display_products">
+      <aside class="search">
+        <!-- the search bar  -->
+        <div class="search_input">
+          <input
+            type="text"
+            name="search"
+            placeholder="search..."
+            class="searching"
+          />
+        </div>
+        <!-- brand or name of the company producing the product -->
+        <ul class="brand">
+          <h3 class="brand_title">Brand</h3>
+          <li class="brand_name">Mac-Adonai</li>
+          <li class="brand_name">Roboto</li>
+          <li class="brand_name">Da-Hubb</li>
+        </ul>
+        <!-- price input -->
+        <div class="range">
+          <h3 class="price_title">Price</h3>
+          <span class="low_price">$0</span>
+          <!-- the price block -->
+          <div class="price_block">
+            <p class="current_price"><span class="price_num">200</span></p>
+            <input
+              type="range"
+              name="price"
+              id="range"
+              value="200"
+              min="0"
+              max="1000"
+            />
+          </div>
+          <!-- end of the price block -->
+          <span class="high_price">$1000</span>
+        </div>
+      </aside>
+
+      <div class="showcase_for_products">
+        <img
+          class="operations prev"
+          src="../images/icon-angle-left.svg"
+          alt=""
+        />
+        <figure class="prod_image first_image scaleone">
+          <img src="../images/product-1.jpeg" alt="product 1" />
+        </figure>
+
+        <figure class="prod_image second_image scaletwo">
+          <img src="../images/product-2.jpg" alt="product 1" />
+        </figure>
+
+        <figure class="prod_image third_image scalethree">
+          <img src="../images/product-5.jpg" alt="product 1" />
+        </figure>
+
+        <figure class="prod_image fourth_image scalefour">
+          <img src="../images/desktop-image-hero-1.jpg" alt="product 1" />
+        </figure>
+        <img
+          class="operations next"
+          src="/images/icon-angle-right.svg"
+          alt=""
+        />
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About || Da-Hubb</title>
+    <!-- using inline style now and external as well -->
+    <!-- the external style link -->
+    <link rel="stylesheet" href="../paint/home.css" />
+    <style>
+      .master_title {
+        /* color: var(--brown); */
+        filter: drop-shadow(-1px -1px 0 var(--brown-lite))
+          drop-shadow(4px 4px 0 black);
+      }
+      .popmenu {
+        background-color: var(--brown);
+      }
+      .point a {
+        color: var(--brown);
+      }
+    </style>
+    <!-- the home script -->
+    <script src="../scripts/home.js" defer></script>
+  </head>
+  <body>
+    <header class="master">
+      <!-- pop menu or compass -->
+      <span class="popmenu">
+        <img src="images/menu.svg" id="menupoper" alt="" />
+      </span>
+      <nav class="compass">
+        <!-- close menun or compass -->
+        <ul class="co-ordinates">
+          <img src="images/icon-close.svg" data-id="closemenu" alt="" />
+          <li class="point"><a href="../index.html" class="link">Home</a></li>
+          <li class="point">
+            <a href="./product.html" class="link">Products</a>
+          </li>
+          <li class="point"><a href="./about.html" class="link">About</a></li>
+        </ul>
+      </nav>
+
+      <h2 class="master_title">comfy</h2>
+
+      <div class="cart_con">
+        <img src="images/cart.svg" alt="cart" title="basket" />
+        <span class="num">2</span>
+      </div>
+    </header>
+    <!-- display location -->
+    <div class="location">
+      <h2 class="locate">Home/About</h2>
+    </div>
+    <!-- the about -->
+    <section class="about">
+      <h1 class="about_title">Our History</h1>
+
+      <p class="writeup">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et debitis
+        quos magnam eveniet! Fugiat ipsa esse sit minus rem. Veniam ipsa
+        perferendis in dolores vel error excepturi dignissimos, ut possimus!
+        Consequatur suscipit, id amet quos sit doloribus commodi et dolorum
+        optio adipisci ipsa perspiciatis asperiores odio beatae velit maiores
+        nam laboriosam impedit laudantium non magni ab? Odio cupiditate quas
+        qui. Eveniet error, porro reiciendis animi adipisci temporibus beatae.
+        Vero dolore consequatur natus! Facilis, voluptatibus sit, praesentium
+        perspiciatis voluptatum porro dolorum eius consequatur velit quibusdam
+        placeat temporibus accusantium error. Nulla, voluptates?
+      </p>
+    </section>
+  </body>
+</html>
